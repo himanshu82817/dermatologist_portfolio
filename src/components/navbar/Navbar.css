@@ -1,0 +1,51 @@
+nav{
+    position: fixed;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: space-between;
+    padding:2% 5%;
+    z-index: 10;
+}
+div p{
+    font-size: 14px;
+    /* color: #BEBEBE; */
+}
+
+.name  p{
+    font-size: 18px;
+    transition: .1s;
+}
+.name  p:hover{
+    cursor: pointer;
+    color: #BA975C;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.menu p{
+    font-size: 18px;
+    text-align: end;
+    position: relative;
+    width: fit-content;
+}
+
+.menu p::before{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: -40%;
+    height: 1px;
+    width: 0px;
+    background-color: #736C5C;
+    transition: .1s;
+}
+.menu p:hover{
+     cursor: pointer;
+}
+.menu p:hover::before{
+    width: 10px;
+   
+}

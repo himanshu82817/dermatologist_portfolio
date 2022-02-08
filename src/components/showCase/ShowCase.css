@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Kotta+One&family=Lato:wght@300&family=Playfair+Display&family=Spline+Sans&display=swap');
+
+.Capabilities{
+    padding: 10% 5% 10% 10%;
+}
+.Capabilities p{
+    color: #BA975C;
+    font-size: 20px;
+    text-align: justify;
+}
+.Capabilities div{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0 10% 0;
+}
+.Capabilities div div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0;
+}
+.Capabilities div div p{
+    padding-right: 0;
+}
+.Capabilities div  p{
+    color: #9c9ea5;
+    width: 70%;
+    font-family: 'Spline Sans', sans-serif;
+    font-size: 23px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    padding-right:10% ;
+}
+.process{
+    padding: 10%;
+}
+.process p{
+    color: #BA975C;
+    font-size: 20px;
+}
+.rotatingCircleHolder{
+    width: 100%;
+    display: flex;
+    padding: 5% 3%;
+    justify-content:space-around;
+    position: relative;
+}
+.runningProcessName{
+    position: absolute;
+    color: #9c9ea5;
+    font-size: 49px;
+    top: 50%;
+    width: 97vw;
+    z-index: -1;
+    white-space: nowrap;
+}
+.rotatingCircleBox{
+    width: 17vw;
+    height: 17vw;
+    position: relative;
+}
+.rotatingCircle{
+    width: 120%;
+    height: 120%;
+    border-radius: 100%;
+    border: 3px dashed #9c9ea5;
+    position: absolute;
+    left:-10%;
+    animation: rotation 20s infinite linear;
+    transition: .4s;
+    
+}
+.rotatingCircle:hover{
+    border: 3px dashed #BA975C;
+    cursor: pointer;
+    animation: invertRotation 20s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+@keyframes invertRotation {
+    from {
+        transform: rotate(359deg) scale(1.1) ;
+    }
+    to {
+        transform: rotate(0deg) ;
+    }
+}
+.rotatingCircle:hover .processBox p:nth-child(2){
+    opacity: 1;
+}
+
+.processHolder{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    padding: 0 3%;
+}
+.processBox{
+    width:17vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3% 0;
+}
+.processBox p:nth-child(1){
+    font-size: 29px;
+    color: #9c9ea5;
+    font-weight: 500;
+}
+.processBox p:nth-child(2){
+    color: #9c9ea5;
+    line-height: 35px;
+    padding: 5px;
+    opacity: .3;
+    transition: .4s;
+}
+
+
+.gallery .pixelEscapes{
+    color: #BA975C;
+    font-size: 20px;
+    width: 100%;
+    padding: 5% 10%;
+}
+.gallery .galleryHeading{
+    color: #D8D8D8;
+    width: 100%;
+    padding: 5% 10%;
+    font-size: 180px;
+    width: 100%;
+    font-family: 'Kotta One', serif;
+    position: relative;
+}
+.gallery .galleryHeading::after{
+    content: '';
+    position: absolute;
+    background-color: #BA975C;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    top: 0;
+    right: 60%;
+    z-index: -1;
+}
+.imageHolder{
+    padding: 3% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.imageHolder .img{
+    width: 23%;
+    overflow: hidden;
+    position: relative;
+}
+.imageHolder .img .aboutImg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ba975cc7;
+    transform: translateY(-200%);
+    transition: .4s;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+.aboutImg p:nth-child(1){
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+.aboutImg p:nth-child(2){
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: justify;
+    color: rgb(226, 233, 255);
+}
+.imageHolder .img img{
+    width: 100%;
+    transition: .4s;
+}
+.imageHolder .img:hover img{
+    transform: scale(1.2);
+}
+.imageHolder .img:hover .aboutImg{
+    transform: translateY(0%);
+    z-index: 1;
+}
+
+
+

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+.aboutWork{
+    padding: 6% 10%;
+}
+.aboutWork p:nth-child(1){
+    color: #BA975C;
+    font-size: 25px;
+}
+.aboutWork P:nth-child(2){
+    color: #736C5C;
+    width: 100%;
+    font-family: 'Quintessential', cursive;
+    font-size: 23px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+.works{
+    padding:2% 10%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.work{
+    width: 40%;
+    padding: 2% 0;
+}
+.work p:nth-child(1){
+    font-size:4vw;
+    font-family: 'Kotta One', serif;
+}

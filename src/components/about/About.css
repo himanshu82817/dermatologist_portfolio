@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Kotta+One&family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Kotta+One&family=Lato:wght@300&family=Playfair+Display&family=Spline+Sans&display=swap');
+.headings{
+    padding-top: 150px;
+}
+.heading{
+    font-size: 100px;
+    width: 100%;
+    padding-left: 10%;
+    font-family: 'Kotta One', serif;
+    color: #BA975C;
+}
+.introduction{
+    padding: 5% 10% 0% 10%;
+}
+.introduction p{
+    color: #C09F66;
+    font-size: 20px;
+    position: relative;
+}
+.introduction p i{
+    position: absolute;
+    right: 104%;
+    bottom: 0;
+}
+.introduction div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 3% 0 5% 0;
+}
+.introduction  p{
+    color:#736C5C;
+    width: 100%;
+    font-family: 'Spline Sans', sans-serif;
+    font-size: 23px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+.introduction div span{
+    width: 45%;
+}
+.introduction div span p{
+    font-family: 'Quintessential', cursive;
+    text-align: justify;
+}
+.introduction div span p:nth-child(2){
+    color: #BA975C;
+}
+.fa-hand-point-down{
+    color: #BA975C;
+    font-size: 50px;
+    transition: .4s;
+}
+.fa-hand-point-down:hover{
+    /* transform: scaleY(1.5); */
+}

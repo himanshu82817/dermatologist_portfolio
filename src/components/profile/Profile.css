@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Kotta+One&family=Lato:wght@300&display=swap');
+
+.landing{
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    height: 700px;
+    align-items: center;
+    padding-top: 90px;
+}
+.background{
+  position:fixed;
+  z-index: -2;
+  width: 100%;
+  height: 100vh;
+  opacity: .5;
+  top: 0;
+  filter: blur(5px);
+}
+.imgHolder{position: relative;z-index: -2; width: 60px;height: 510px;}
+.imgHolder p{font-family: 'Kotta One', serif; font-weight: 700; position: absolute;font-size: 40px; transition: .9s;color: #BA975C; }
+.imgHolder .cloud{position: absolute;right: 0;top: 20px;height: 270px; z-index: -1;transition: .1s;}
+.imgHolder .shadow{position: absolute;right: 0;top: 20px;height: 220px; z-index: -1;transition: .1s;opacity: .7;filter: saturate(109%);}
+.imgHolder .profile2{position: absolute; height: 320px;top: 90px;transition: .1s;}
+.imgHolder .profile1{position: absolute; height: 190px;bottom:0px;right: 0;transition: .1s;}
+.circle{width: 500px;height: 80%;display: flex;align-items: flex-end;justify-content:flex-end;}
+.circle div{height: 150px;width: 150px;background-color: #BA975C;border-radius: 100%;}
+.welcomeTxt{width: 100%;position: absolute;bottom:150px;}
+.welcomeTxt marquee{color: #736C5C;font-size: 55px;}
+.switch{width: 100%;display: flex;padding:0 5%;position: absolute;bottom: 60px;}
+.switch i{color: #736C5C;font-size: 30px; animation: rotation 2s infinite linear;transition: .4s; }
+.switch i:hover{cursor: pointer;transform: translate(1.5);color: #BA975C;}
+    @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+      }

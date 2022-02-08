@@ -1,0 +1,8 @@
+.clintHolder{
+    padding:0 10% ;
+    overflow: hidden;
+}
+.clintHolder p{
+    font-size: 22px;
+    padding: 5px 0;
+}

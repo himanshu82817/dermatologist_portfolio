@@ -1,0 +1,127 @@
+.contactUs{
+    padding:20% 10% 5% 10%;
+}
+.getInTouch{
+    color: #BA975C;
+    font-size: 20px;
+}
+.connectHeading{
+    color: #D8D8D8;
+    width: 100%;
+    padding: 5% 10%;
+    font-size: 180px;
+    width: 100%;
+    font-family: 'Kotta One', serif;
+    position: relative;
+}
+.connectHeading::after{
+    content: '';
+    position: absolute;
+    background-color: #BA975C;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    top: 0;
+    right: 60%;
+    z-index: -1;
+}
+.mediaLinks{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 150px;
+}
+.mediaLinks .link{
+    width: 100%;
+    height:150px;
+    overflow: hidden;
+    position: relative;
+}
+.mediaLinks .mainLink{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 10%;
+    position: absolute;
+    top: 0;
+    transition: .4s;
+}
+.mediaLinks .link::after{
+    position: absolute;
+    content: '';
+    background-color: #BA975C;
+    height: 4px;
+    width: 80%;
+    bottom:0;
+    left: 10%;
+}
+.mediaLinks .mainLink p{
+    font-size: 60px;
+    color:  #BA975C;
+}
+.mediaLinks .mainLink i{
+    font-size: 60px ;
+    color:  #BA975C;
+    transform: rotate(45deg);
+}
+.mediaLinks .hoverEffect{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 10%;
+    position: absolute;
+    top: 0;
+    background-color: #BA975C;
+    transition: .4s;
+    transform: translateY(200px);
+}
+.mediaLinks .hoverEffect p{
+    font-size: 60px;
+    color: #ffffff;
+}
+.mediaLinks .hoverEffect i{
+    font-size: 60px;
+    color: #ffffff;
+    transform: rotate(45deg);
+}
+.link:hover{
+    cursor: pointer;
+}
+.link:hover .hoverEffect{
+    transform: translateY(0px);
+}
+.link:hover .mainLink{
+    transform: translateY(-200px);
+}
+.findMe{
+    color: #BA975C;
+    font-size: 25px;
+    width: 100%;
+    padding:0 10%;
+}
+#address1{
+    color: #000000;
+    font-size: 150px;
+    font-family: 'Kotta One', serif;
+    position: relative;
+    padding: 25px 0;
+}
+#address2{
+    color: #ffffff;
+    font-size: 150px;
+    font-family: 'Kotta One', serif;
+    position: relative;
+    padding: 25px 0;
+    -webkit-text-stroke: 2px #ba975c;
+}
+.fa-hand-peace{
+    color: #BA975C;
+    font-size: 40px;
+    font-weight: 100;
+    width: 100%;
+    padding: 10%;
+}
