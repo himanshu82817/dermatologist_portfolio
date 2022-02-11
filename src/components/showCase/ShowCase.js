@@ -6,9 +6,29 @@ import image2 from '../../images/Dermatosurgery.jpg';
 import image3 from '../../images/Hair.png';
 import image4 from '../../images/Laser Treatments.jpg';
 import image5 from '../../images/pexels-nico-becker-5619463.jpg';
+import image6 from '../../images/Anti ageing.jpg';
+import image7 from '../../images/Body Cosmetic.jpg';
+import image8 from '../../images/Cosmetic Treatments.jpg';
 
 
 export default function ShowCase() {
+    function switchSlideright(){
+        
+        let slide1 = document.getElementById('slide1')
+        let slide2 = document.getElementById('slide2')
+        
+            slide2.style.transform = 'translateX(0vw)'
+            slide1.style.transform = 'translateX(-100vw)'
+        
+     
+    }
+    function switchSlideleft(){
+        let slide1 = document.getElementById('slide1')
+        let slide2 = document.getElementById('slide2')
+        
+        slide2.style.transform = 'translateX(100vw)'
+        slide1.style.transform = 'translateX(0vw)'
+    }
     function animate1() {
         let hand = document.getElementById('hand1');
         setTimeout(() => {
@@ -110,36 +130,72 @@ export default function ShowCase() {
             <div className="gallery">
                 <p className='pixelEscapes' >Pixel Escapes</p>
                 <p className='galleryHeading' >Gallery</p>
-                
-                <div className="imageHolder">
-                    <div className="img">
-                        <div className="aboutImg">
-                            <p>Dermatology</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                <div className="slider">
+                    <div className="imageHolder" id='slide1' >
+                        <div className="img">
+                            <div className="aboutImg">
+                                <p>Dermatology</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                            </div>
+                            <img src={image1} alt="" />
                         </div>
-                        <img src={image1} alt="" />
-                    </div>
-                    <div className="img">
-                    <div className="aboutImg">
-                            <p>Dermatosurgery</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                        <div className="img">
+                            <div className="aboutImg">
+                                <p>Dermatosurgery</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                            </div>
+                            <img src={image2} alt="" />
                         </div>
-                        <img src={image2} alt="" />
-                    </div>
-                    <div className="img">
-                    <div className="aboutImg">
-                            <p>Hair</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                        <div className="img">
+                            <div className="aboutImg">
+                                <p>Hair</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                            </div>
+                            <img src={image3} alt="" />
                         </div>
-                        <img src={image3} alt="" />
-                    </div>
-                    <div className="img">
-                    <div className="aboutImg">
-                            <p>Laser Treatments</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                        <div className="img">
+                            <div className="aboutImg">
+                                <p>Laser Treatments</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                            </div>
+                            <img src={image4} alt="" />
                         </div>
-                        <img src={image4} alt="" />
                     </div>
+                    <div className="imageHolder" id='slide2'>
+                    <div className="img">
+                            <div className="aboutImg">
+                                <p>Anti Aging Treatments</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                            </div>
+                            <img src={image6} alt="" />
+                        </div>
+                        <div className="img">
+                            <div className="aboutImg">
+                                <p>Cosmetic Treatments</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                            </div>
+                            <img src={image7} alt="" />
+                        </div>
+                        <div className="img">
+                            <div className="aboutImg">
+                                <p>Dermatosurgery</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                            </div>
+                            <img src={image2} alt="" />
+                        </div>
+                        
+                        <div className="img">
+                            <div className="aboutImg">
+                                <p>Body Cosmetic Treatment</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                            </div>
+                            <img src={image8} alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div className='swiper' >
+                 <i onClick={switchSlideleft} class="fas fa-hand-point-left"></i>
+                 <i onClick={switchSlideright} class="fas fa-hand-point-right"></i>
                 </div>
             </div>
         </>

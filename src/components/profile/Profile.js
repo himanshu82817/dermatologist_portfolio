@@ -71,7 +71,7 @@ export default function profile() {
                 <div id='imgHolder' className="imgHolder">
                     <p id='num' className="num">©’22</p>
                     <img id='cloud' className='cloud' src={header1} alt="" />
-                    {/* <img id='shadow' className='shadow' src={cloud_color} alt="" /> */}
+                   
                     <img id='profile2' className='profile2' src={profile1} alt="" />
                     <img id='profile1' className='profile1' src={header2} alt="" />
                 </div>

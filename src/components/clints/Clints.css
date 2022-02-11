@@ -3,6 +3,9 @@
     overflow: hidden;
 }
 .clintHolder p{
-    font-size: 22px;
-    padding: 5px 0;
+    font-size: 23px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    padding: 5px 0; 
 }

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Kotta+One&family=Lato:wght@300&family=Playfair+Display&family=Spline+Sans&display=swap');
 *{
   box-sizing: border-box;
 }
@@ -17,7 +18,8 @@ body::-webkit-scrollbar{
   display: none;
 }
 h1,h2,h3,h4,h5,h6,p{
-  margin: 0;padding: 0;color: #000000;
+  margin: 0;padding: 0;color: #736C5C;
+  font-family: 'Quintessential', cursive;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
