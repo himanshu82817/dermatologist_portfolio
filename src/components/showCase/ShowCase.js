@@ -12,41 +12,41 @@ import image8 from '../../images/Cosmetic Treatments.jpg';
 
 
 export default function ShowCase() {
-    function switchSlideright(){
-        
+    function switchSlideright() {
+
         let slide1 = document.getElementById('slide1')
         let slide2 = document.getElementById('slide2')
-        
-            slide2.style.transform = 'translateX(0vw)'
-            slide1.style.transform = 'translateX(-100vw)'
-        
-     
+
+        slide2.style.transform = 'translateX(0vw)'
+        slide1.style.transform = 'translateX(-100vw)'
+
+
     }
-    function switchSlideleft(){
+    function switchSlideleft() {
         let slide1 = document.getElementById('slide1')
         let slide2 = document.getElementById('slide2')
-        
+
         slide2.style.transform = 'translateX(100vw)'
         slide1.style.transform = 'translateX(0vw)'
     }
-    function animate1() {
-        let hand = document.getElementById('hand1');
-        setTimeout(() => {
-            hand.style.transform = "scaleY(0.7)"
-        }, 100);
-        // setTimeout(() => {
-        //     hand.style.transform = "scaleY(1)"
-        // }, 400);
-        setTimeout(() => {
-            hand.style.transform = "scaleY(1.9)"
-        }, 800);
-        setTimeout(() => {
-            hand.style.transform = "scaleY(1)"
-        }, 1200);
-    }
-    setInterval(() => {
-        animate1()
-    }, 5000);
+    // function animate1() {
+    //     let hand = document.getElementById('hand1');
+    //     setTimeout(() => {
+    //         hand.style.transform = "scaleY(0.7)"
+    //     }, 100);
+    //     // setTimeout(() => {
+    //     //     hand.style.transform = "scaleY(1)"
+    //     // }, 400);
+    //     setTimeout(() => {
+    //         hand.style.transform = "scaleY(1.9)"
+    //     }, 800);
+    //     setTimeout(() => {
+    //         hand.style.transform = "scaleY(1)"
+    //     }, 1200);
+    // }
+    // setInterval(() => {
+    //     animate1()
+    // }, 5000);
 
     setTimeout(() => {
         const circle1 = document.getElementById("circle1");
@@ -90,6 +90,7 @@ export default function ShowCase() {
 
         <>
             <div className='Capabilities' >
+
                 <p>Dr.Shalini’s vision:</p>
                 <div>
                     <p>Our vision is to be reputed as the leader in our sector by our patients, suppliers and regulators. This can be achieved by recruiting highly trained professionals, and staff whose ambitions are in line with ours to exceed patient expectations.While working with patients my goal is to bring their bodies back in sync using a mixture of procedures, medication and wellness techniques. <br /> Our only mission is to provide the highest quality of care, and unparalleled service to our patrons.</p>
@@ -97,7 +98,7 @@ export default function ShowCase() {
                         <img src={image5} alt="" />
                     </div>
                 </div>
-                <i id='hand1' class="fas fa-hand-point-down"></i>
+                <i id='hand1' class="fas fa-arrow-down"></i>
             </div>
             <div className="process">
                 <p>Process</p>
@@ -129,7 +130,7 @@ export default function ShowCase() {
             </div>
             <div className="gallery">
                 <p className='pixelEscapes' >Pixel Escapes</p>
-                <p className='galleryHeading' >Gallery</p>
+                <p className='galleryHeading' >Services</p>
                 <div className="slider">
                     <div className="imageHolder" id='slide1' >
                         <div className="img">
@@ -138,6 +139,7 @@ export default function ShowCase() {
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
                             </div>
                             <img src={image1} alt="" />
+                            <p>Dermatology</p>
                         </div>
                         <div className="img">
                             <div className="aboutImg">
@@ -145,6 +147,7 @@ export default function ShowCase() {
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
                             </div>
                             <img src={image2} alt="" />
+                            <p>Dermatosurgery</p>
                         </div>
                         <div className="img">
                             <div className="aboutImg">
@@ -152,6 +155,7 @@ export default function ShowCase() {
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
                             </div>
                             <img src={image3} alt="" />
+                            <p>Hair</p>
                         </div>
                         <div className="img">
                             <div className="aboutImg">
@@ -159,15 +163,17 @@ export default function ShowCase() {
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
                             </div>
                             <img src={image4} alt="" />
+                            <p>Laser Treatments</p>
                         </div>
                     </div>
                     <div className="imageHolder" id='slide2'>
-                    <div className="img">
+                        <div className="img">
                             <div className="aboutImg">
                                 <p>Anti Aging Treatments</p>
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
                             </div>
                             <img src={image6} alt="" />
+                            <p>Anti Aging Treatments</p>
                         </div>
                         <div className="img">
                             <div className="aboutImg">
@@ -175,6 +181,7 @@ export default function ShowCase() {
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
                             </div>
                             <img src={image7} alt="" />
+                            <p>Cosmetic Treatments</p>
                         </div>
                         <div className="img">
                             <div className="aboutImg">
@@ -182,20 +189,22 @@ export default function ShowCase() {
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
                             </div>
                             <img src={image2} alt="" />
+                            <p>Dermatosurgery</p>
                         </div>
-                        
+
                         <div className="img">
                             <div className="aboutImg">
                                 <p>Body Cosmetic Treatment</p>
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
                             </div>
                             <img src={image8} alt="" />
+                            <p>Body Cosmetic Treatment</p>
                         </div>
                     </div>
                 </div>
                 <div className='swiper' >
-                 <i onClick={switchSlideleft} class="fas fa-hand-point-left"></i>
-                 <i onClick={switchSlideright} class="fas fa-hand-point-right"></i>
+                    <i onClick={switchSlideleft} class="fas fa-arrow-left"></i>
+                    <i onClick={switchSlideright} class="fas fa-arrow-right"></i>
                 </div>
             </div>
         </>

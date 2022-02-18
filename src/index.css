@@ -17,10 +17,11 @@ body {
 body::-webkit-scrollbar{
   display: none;
 }
-h1,h2,h3,h4,h5,h6,p{
+h1,h2,h3,h4,h5,h6,p,marquee{
   margin: 0;padding: 0;color: #736C5C;
   font-family: 'Quintessential', cursive;
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

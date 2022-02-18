@@ -4,7 +4,7 @@
 }
 .aboutWork p:nth-child(1){
     color: #BA975C;
-    font-size: 25px;
+    font-size: 35px;
 }
 .aboutWork P:nth-child(2){
     color: #736C5C;
@@ -14,6 +14,7 @@
     line-height: 40px;
     letter-spacing: 2px;
     word-spacing: 4px;
+    text-align: justify;
 }
 .works{
     padding:2% 10%;

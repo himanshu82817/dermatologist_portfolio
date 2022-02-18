@@ -176,7 +176,7 @@
     justify-content: flex-end;
     padding: 0 5%;
 }
-.fa-hand-point-right, .fa-hand-point-left{
+.fa-arrow-right, .fa-arrow-left{
     color: #BA975C;
     font-size: 40px;
     margin: 0 20px;
@@ -188,6 +188,9 @@
     overflow: hidden;
     position: relative;
     border-radius: 5px;
+}
+.img p:nth-child(3){
+    font-size: 20px;
 }
 .imageHolder .img .aboutImg{
     position: absolute;

@@ -3,24 +3,24 @@ import "../about/About.css"
 
 export default function about() {
 
-    function animate() {
-        let hand = document.getElementById('hand');
-        setTimeout(() => {
-            hand.style.transform = "scaleY(0.7)"
-        }, 100);
-        // setTimeout(() => {
-        //     hand.style.transform = "scaleY(1)"
-        // }, 400);
-        setTimeout(() => {
-            hand.style.transform = "scaleY(1.9)"
-        }, 800);
-        setTimeout(() => {
-            hand.style.transform = "scaleY(1)"
-        }, 1200);
-    }
-    setInterval(() => {
-        animate()
-    }, 5000);
+    // function animate() {
+    //     let hand = document.getElementById('hand');
+    //     setTimeout(() => {
+    //         hand.style.transform = "scaleY(0.7)"
+    //     }, 100);
+    //     // setTimeout(() => {
+    //     //     hand.style.transform = "scaleY(1)"
+    //     // }, 400);
+    //     setTimeout(() => {
+    //         hand.style.transform = "scaleY(1.9)"
+    //     }, 800);
+    //     setTimeout(() => {
+    //         hand.style.transform = "scaleY(1)"
+    //     }, 1200);
+    // }
+    // setInterval(() => {
+    //     animate()
+    // }, 5000);
 
     return (
         <>
@@ -39,7 +39,7 @@ export default function about() {
                     <p> No two clients are the same -  I work with a keen attention to detail incorporating advanced technologies into each treatment.</p>
                     </span>
                 </div>
-                <i id='hand' class="fas fa-hand-point-down"></i>
+                <i id='hand' class="fas fa-arrow-down"></i>
             </div>
 
         </>

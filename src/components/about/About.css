@@ -48,7 +48,7 @@
 .introduction div span p:nth-child(2){
     color: #BA975C;
 }
-.fa-hand-point-down{
+.fa-arrow-down{
     color: #BA975C;
     font-size: 50px;
     transition: .4s;

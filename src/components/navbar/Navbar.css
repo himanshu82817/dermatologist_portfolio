@@ -6,6 +6,8 @@ nav{
     justify-content: space-between;
     padding:2% 5%;
     z-index: 10;
+    transition: 1s;
+    /* transform: translateY(-200px); */
 }
 div p{
     font-size: 14px;
