@@ -1,12 +1,18 @@
 .contactUs{
-    padding:20% 10% 5% 10%;
+    padding:5% 10% 0% 10%;
 }
 .getInTouch{
-    color: #BA975C;
-    font-size: 20px;
+    color: #c07b66;
+    font-size: 25px;
+    position: relative;
+}
+.getInTouch i{
+    position: absolute;
+    right: 104%;
+    top: 10%;
 }
 .connectHeading{
-    color: #D8D8D8;
+    color: #000000;
     width: 100%;
     padding: 5% 10%;
     font-size: 180px;
@@ -17,7 +23,7 @@
 .connectHeading::after{
     content: '';
     position: absolute;
-    background-color: #BA975C;
+    background-color: #F04A24;
     width: 200px;
     height: 200px;
     border-radius: 100%;
@@ -51,7 +57,7 @@
 .mediaLinks .link::after{
     position: absolute;
     content: '';
-    background-color: #BA975C;
+    background-color: #F04A24;
     height: 4px;
     width: 80%;
     bottom:0;
@@ -59,11 +65,11 @@
 }
 .mediaLinks .mainLink p{
     font-size: 60px;
-    color:  #BA975C;
+    color:  #F04A24;
 }
 .mediaLinks .mainLink i{
     font-size: 60px ;
-    color:  #BA975C;
+    color:  #F04A24;
     transform: rotate(45deg);
 }
 .mediaLinks .hoverEffect{
@@ -75,7 +81,7 @@
     padding: 2% 10%;
     position: absolute;
     top: 0;
-    background-color: #BA975C;
+    background-color: #F04A24;
     transition: .4s;
     transform: translateY(200px);
 }
@@ -88,6 +94,46 @@
     color: #ffffff;
     transform: rotate(45deg);
 }
+
+.form{
+    padding: 0 0% 5% 10%;
+    position: relative;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    /* align-items: center; */
+}
+form span{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+input , select, option{
+    margin: 20px 0;
+    width: 40%;
+    height: 30px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #F04A24;
+    font-size: 20px;
+    color: gray;
+}
+input:focus, select:focus{
+    outline: none;
+    border-bottom: 2px solid #ff2f00;
+}
+button{
+    margin-top: 20px;
+    border: none;
+    background-color: #ff2f00;
+    padding: 10px 30px;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    width: fit-content;
+}
 .link:hover{
     cursor: pointer;
 }
@@ -98,10 +144,18 @@
     transform: translateY(-200px);
 }
 .findMe{
-    color: #BA975C;
+    color: #F04A24;
     font-size: 25px;
     width: 100%;
     padding:0 10%;
+}
+.connectImg{
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    height: 144%;
+    right:2%;
+    filter: grayscale(70%);
 }
 #address1{
     color: #000000;
@@ -116,12 +170,42 @@
     font-family: 'Kotta One', serif;
     position: relative;
     padding: 25px 0;
-    -webkit-text-stroke: 2px #ba975c;
+    -webkit-text-stroke: 2px #F04A24;
 }
 .fa-hand-peace{
-    color: #BA975C;
+    color: #F04A24;
     font-size: 40px;
     font-weight: 100;
     width: 100%;
     padding: 10%;
+}
+
+@media (max-width:800px) {
+    .contactUs{
+        padding: 4%;
+    }
+    .getInTouch{
+        font-size: 15px;
+    }
+    .getInTouch i{
+        display: none;
+    }
+    .connectHeading{
+        font-size: 40px;
+    }
+    .connectHeading::after{
+        width: 50px;
+        height: 50px;
+    }
+    .connectImg{
+        height: 140%;
+        right: 0;
+        opacity: .4;
+    }
+    input , select, option{
+        font-size: 14px;
+    }
+    .form{
+        width: 100%;
+    }
 }

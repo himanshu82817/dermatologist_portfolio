@@ -1,11 +1,13 @@
 import React from 'react'
 import '../showCase/ShowCase.css'
+import { Outlet, Link } from "react-router-dom";
+
 
 import image1 from '../../images/Dermatology.jpg';
 import image2 from '../../images/Dermatosurgery.jpg';
 import image3 from '../../images/Hair.png';
 import image4 from '../../images/Laser Treatments.jpg';
-import image5 from '../../images/pexels-nico-becker-5619463.jpg';
+import image5 from '../../images/botox.jpg';
 import image6 from '../../images/Anti ageing.jpg';
 import image7 from '../../images/Body Cosmetic.jpg';
 import image8 from '../../images/Cosmetic Treatments.jpg';
@@ -78,30 +80,48 @@ export default function ShowCase() {
         function mouseOver(process, processName) {
             // circle.style.transform = scale(1.1);
             process.style.opacity = 1
-            processName.style.color = '#BA975C'
+            processName.style.color = '#F04A24'
         }
         function mouseOut(process, processName) {
             process.style.opacity = .3
             processName.style.color = '#9c9ea5'
         }
     }, 0);
+    function restorePosition(){
+        window.scrollTo(0,0)
+    }
 
     return (
 
         <>
-            <div className='Capabilities' >
+            <div className='Capabilities introduction' >
 
-                <p>Dr.Shalini’s vision:</p>
+                <p><i class="fas fa-crosshairs"></i>Capabilities</p>
                 <div>
-                    <p>Our vision is to be reputed as the leader in our sector by our patients, suppliers and regulators. This can be achieved by recruiting highly trained professionals, and staff whose ambitions are in line with ours to exceed patient expectations.While working with patients my goal is to bring their bodies back in sync using a mixture of procedures, medication and wellness techniques. <br /> Our only mission is to provide the highest quality of care, and unparalleled service to our patrons.</p>
-                    <div>
-                        <img src={image5} alt="" />
-                    </div>
+                    <p>Over a decade of experience in aesthetic dermatology. I believe that an individual needs a holistic healing. One's physical, mental and emotional well-being are interlinked, making us unique. I have a team of experts including a clinical psychologist for assisting in dealing with repressed emotions. A therapeutic nutritionist and the interventions recommended according to body type plays a major role in dealing with the skin condition.</p>
+                    
+                        <div>
+                            <p>Botox and fillers</p>
+                            <p>Anti Aging</p>
+                            <p>Lasers</p>
+                            <p>Skin rejuvenation</p>
+                            <p>Chemical peels</p>
+                            <p>Threads for face and body</p>
+                        </div>
+                        <div>
+                            <p>Mesotherapy</p>
+                            <p>Anti-pigmentation</p>
+                            <p>Microblading</p>
+                            <p>Lip tinting</p>
+                            <p>Body polishing</p>
+                            <p>Hair transplant</p>    
+                        </div>
+                    
                 </div>
-                <i id='hand1' class="fas fa-arrow-down"></i>
+                {/* <i id='hand1' class="fas fa-arrow-down"></i> */}
             </div>
-            <div className="process">
-                <p>Process</p>
+            <div className="process ">
+                <p> <i class="fas fa-crosshairs"></i> Process</p>
                 <div className="rotatingCircleHolder">
                     <div className="rotatingCircleBox"> <div id='circle1' className="rotatingCircle"></div> </div>
                     <div className="rotatingCircleBox"> <div id='circle2' className="rotatingCircle"></div> </div>
@@ -129,76 +149,101 @@ export default function ShowCase() {
                 </div>
             </div>
             <div className="gallery">
-                <p className='pixelEscapes' >Pixel Escapes</p>
+                {/* <p className='pixelEscapes' >Pixel Escapes</p> */}
                 <p className='galleryHeading' >Services</p>
                 <div className="slider">
+                    <p className="overTxt">INSPIRED BY CULTURES, TRAVEL, <br /> AND THE OUTDOORS.</p>
                     <div className="imageHolder" id='slide1' >
-                        <div className="img">
-                            <div className="aboutImg">
-                                <p>Dermatology</p>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                        <div  className="img">
+                            <div className="aboutImg">   
+                                <p className='serviceName' >Dermatology</p>
+                                <p className='aboutService' >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                                <Link to="/service" >
+                                    <p onClick={restorePosition} className='link1'>Read More</p>
+                                </Link>
                             </div>
                             <img src={image1} alt="" />
-                            <p>Dermatology</p>
+                           
                         </div>
                         <div className="img">
                             <div className="aboutImg">
-                                <p>Dermatosurgery</p>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                                <p className='serviceName' >Dermatosurgery</p>
+                                <p className='aboutService' >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                                <Link to="/service" >
+                                    <p onClick={restorePosition} className='link1'>Read More</p>
+                                </Link>
                             </div>
                             <img src={image2} alt="" />
-                            <p>Dermatosurgery</p>
+                            
                         </div>
                         <div className="img">
                             <div className="aboutImg">
-                                <p>Hair</p>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                                <p className='serviceName' >Hair</p>
+                                <p className='aboutService' >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                                <Link to="/service" >
+                                    <p onClick={restorePosition} className='link1'>Read More</p>
+                                </Link>
                             </div>
                             <img src={image3} alt="" />
-                            <p>Hair</p>
+                           
                         </div>
                         <div className="img">
                             <div className="aboutImg">
-                                <p>Laser Treatments</p>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                                <p className='serviceName' >Laser Treatment</p>
+                                <p className='aboutService' >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                                <Link to="/service" >
+                                    <p onClick={restorePosition} className='link1'>Read More</p>
+                                </Link>
                             </div>
                             <img src={image4} alt="" />
-                            <p>Laser Treatments</p>
+                            
                         </div>
                     </div>
                     <div className="imageHolder" id='slide2'>
                         <div className="img">
                             <div className="aboutImg">
-                                <p>Anti Aging Treatments</p>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                                <p className='serviceName' >Anti Aging Treatments</p>
+                                <p className='aboutService' >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                                <Link to="/service" >
+                                    <p onClick={restorePosition} className='link1'>Read More</p>
+                                </Link>
                             </div>
                             <img src={image6} alt="" />
-                            <p>Anti Aging Treatments</p>
+                           
                         </div>
                         <div className="img">
                             <div className="aboutImg">
-                                <p>Cosmetic Treatments</p>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                                <p className='serviceName' >Cosmetic Treatments</p>
+                                <p className='aboutService' >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                                <Link to="/service" >
+                                    <p onClick={restorePosition} className='link1'>Read More</p>
+                                </Link>
                             </div>
                             <img src={image7} alt="" />
-                            <p>Cosmetic Treatments</p>
+                           
                         </div>
                         <div className="img">
                             <div className="aboutImg">
-                                <p>Dermatosurgery</p>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                                <p className='serviceName' >Botox</p>
+                                <p className='aboutService' >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                                <Link to="/service" >
+                                    <p onClick={restorePosition} className='link1'>Read More</p>
+                                </Link>
                             </div>
-                            <img src={image2} alt="" />
-                            <p>Dermatosurgery</p>
+                            <img src={image5} alt="" />
+                          
                         </div>
 
                         <div className="img">
                             <div className="aboutImg">
-                                <p>Body Cosmetic Treatment</p>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                                <p className='serviceName' >Body Cosmetic Treatment</p>
+                                <p className='aboutService' >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi a pariatur aliquam expedita placeat nesciunt nam, nemo, eligendi aspernatur sunt aperiam molestias quia aut. Cupiditate, assumenda sunt? Numquam, sit.</p>
+                                <Link to="/service" >
+                                    <p onClick={restorePosition} className='link1'>Read More</p>
+                                </Link>
                             </div>
                             <img src={image8} alt="" />
-                            <p>Body Cosmetic Treatment</p>
+                            
                         </div>
                     </div>
                 </div>

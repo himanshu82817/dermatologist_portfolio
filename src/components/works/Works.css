@@ -1,16 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
 .aboutWork{
-    padding: 6% 10%;
+    padding: 0% 10%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.bgImg2{
+    width: 45%;
+    border-radius: 10px;
 }
 .aboutWork p:nth-child(1){
-    color: #BA975C;
-    font-size: 35px;
+    color: #c07b66;
+    font-size: 20px;
 }
-.aboutWork P:nth-child(2){
-    color: #736C5C;
-    width: 100%;
-    font-family: 'Quintessential', cursive;
-    font-size: 23px;
+.aboutWork P{
+    color:#272727;
+    width: 50%;
+    font-size: 1.3rem;
     line-height: 40px;
     letter-spacing: 2px;
     word-spacing: 4px;
@@ -30,4 +36,21 @@
 .work p:nth-child(1){
     font-size:4vw;
     font-family: 'Kotta One', serif;
+}
+@media (max-width:800px) {
+    .aboutWork{
+        flex-direction: column;
+        padding: 4%;
+    }
+    .aboutWork p{
+        color: #535353;
+        width: 100%;
+        font-size: 1.3rem;
+        line-height: 30px;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+    }
+    .bgImg2{
+        width: 100%;
+    }
 }

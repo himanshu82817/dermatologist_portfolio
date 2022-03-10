@@ -1,58 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Eczar&family=Kotta+One&family=Lato:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Eczar&family=Kotta+One&family=Lato:wght@300&family=Playfair+Display&family=Spline+Sans&display=swap');
-.headings{
+.headings {
     padding-top: 150px;
 }
-.heading{
+
+.heading {
     font-size: 100px;
     width: 100%;
     padding-left: 10%;
     font-family: 'Kotta One', serif;
-    color: #BA975C;
+    color: #000000;
 }
-.introduction{
+
+.introduction {
     padding: 5% 10% 0% 10%;
-}
-.introduction p{
-    color: #C09F66;
-    font-size: 20px;
     position: relative;
 }
-.introduction p i{
+
+.introduction p {
+    color: #c07b66;
+    font-size: 25px;
+    position: relative;
+}
+
+.introduction p i {
     position: absolute;
     right: 104%;
-    bottom: 0;
+    top: 10%;
 }
+
 .introduction div {
     display: flex;
     width: 100%;
     justify-content: space-between;
     padding: 3% 0 5% 0;
 }
-.introduction  p{
-    color:#736C5C;
+
+.introduction div span p {
+    color: #272727;
     width: 100%;
-    font-family: 'Spline Sans', sans-serif;
-    font-size: 23px;
+    font-size: 1.3rem;
     line-height: 40px;
     letter-spacing: 2px;
     word-spacing: 4px;
 }
-.introduction div span{
+
+.introduction div span {
     width: 45%;
 }
-.introduction div span p{
-    font-family: 'Quintessential', cursive;
+
+.introduction div span p {
     text-align: justify;
 }
-.introduction div span p:nth-child(2){
-    color: #BA975C;
+
+.introduction div span p:nth-child(2) {
+    color: #c07b66;
 }
-.fa-arrow-down{
-    color: #BA975C;
-    font-size: 50px;
+
+.fa-arrow-down {
+    color: #F04A24;
+    font-size: 1.3rem;
     transition: .4s;
 }
-.fa-hand-point-down:hover{
+
+.fa-hand-point-down:hover {
     /* transform: scaleY(1.5); */
+}
+
+.bgImg {
+    position: absolute;
+    right: 35%;
+    top: -20%;
+    filter: grayscale(100%);
+    z-index: -1;
+    opacity: .2;
+    width: 30%;
+}
+
+@media (max-width:800px) {
+    .headings{
+        padding-bottom:100px;
+    }
+    .heading {
+        padding: 0 0 0 4%;
+        font-size: 40px;
+    }
+    .introduction {
+        padding: 4%;
+    }
+    .introduction p i {
+        display: none
+    }
+    .introduction div {
+        flex-direction: column;
+        padding: 7% 0 0 0;
+    }
+    .introduction div span {
+        width: 100%;
+    }
+    .introduction div span p {
+        color: #535353;
+        width: 100%;
+        font-size: 1.3rem;
+        line-height: 30px;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+    }
+    .bgImg {
+        top:-20%;
+        width: 70%;
+        left: 15%;
+    }
 }

@@ -5,5 +5,29 @@ footer{
     justify-content: space-between;
     padding:3% 5%;
     z-index: 10;
-    background-color: #BA975C;
+    background-color: #F04A24;
+}
+
+@media (max-width:800px) {
+    /* nav{
+        width: 100%;
+    } */
+    footer {
+        padding: 4%;
+    }
+    footer div {
+        display: none;
+    }
+    footer p {
+        font-size: 10px;
+    }
+    .name {
+        display: block;
+    }
+    .menu {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }

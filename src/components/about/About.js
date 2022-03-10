@@ -1,5 +1,6 @@
 import React from 'react'
 import "../about/About.css"
+import bgImg from '../../images/bgImg.png'
 
 export default function about() {
 
@@ -24,22 +25,25 @@ export default function about() {
 
     return (
         <>
+            
             <div className='headings' >
-                <p className='heading' >Skin that feels good —</p>
-                <p className='heading' >Inside Out</p>
+                <p className='heading' >My </p>
+                <p className='heading' >Philosophy</p>
             </div>
             <div className="introduction">
-                <p> <i class="fal fa-sign-in-alt"></i>About Me</p>
+                <p> <i class="fas fa-crosshairs"></i>Introduction</p>
+                <img src={bgImg} alt="" className="bgImg" />
                 <div>
                     <span>
-                    <p>I have been helping people combat their dermatological problems for over a decade. For me, joy stems from correcting imperfections to give my patients confidence that empowers them to be find happiness in their own selves. Over the span of my career I have helped my patients manage and overcome skin disorders with dermato-surgical procedures as well as safe cosmetic procedures.</p>
+                        <p>Everything in nature is interdependent. One entity can’t exist is isolation. I believe that disease comes when the person goes against the nature. We all are controlled by it. Skin is a reflection of one’s inner self. It works through the “mind-gut-skin axis”. Everything in nature is a masterpiece, with all its imperfections. Finding perfection in these imperfections is my passion. Nature’s scale to measure perfection is the “GOLDEN RATIO”. Nothing is symmetrical but still so beautiful and looks perfect. Nothing is perfect but still so beautiful !
+                        </p>
                     </span>
                     <span>
-                    <p>My wide range of expertise enables me to offer solutions for every aspect of medical and aesthetic dermatology - from anti-ageing treatments and skin rejuvenation to hair transplants and botox. I engage with each client with compassion and personalised attention.</p>
-                    <p> No two clients are the same -  I work with a keen attention to detail incorporating advanced technologies into each treatment.</p>
+                        <p>Every person too is a masterpiece. Correcting some of the imperfections in order to enhance one’s potential and beauty and therefore enhancing one’s confidence is very satisfying job. The skin carries our image to the world. It’s our first barrier and first point of contact. It’s health is a predictor of one’s health and well being both mentally and physically.
+                        </p>
                     </span>
                 </div>
-                <i id='hand' class="fas fa-arrow-down"></i>
+                {/* <i id='hand' class="fas fa-arrow-down"></i> */}
             </div>
 
         </>

@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Eczar&family=Kotta+One&family=Lato:wght@300&family=Playfair+Display&family=Spline+Sans&display=swap');
 
 .Capabilities{
-    padding: 5% 5% 5% 10%;
+    padding: 5% 5% 1% 10%;
 }
 .Capabilities p{
-    color: #BA975C;
-    font-size: 20px;
-    text-align: justify;
+    color: #c07b66;
+    font-size: 25px;
+    position: relative;
+}
+.Capabilities div  p{
+    color: #3a3a3a;
+    width: 50%;
+    font-size: 1.3rem;
+    line-height: 40px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
 }
 .Capabilities div{
     display: flex;
@@ -16,28 +24,31 @@
 .Capabilities div div {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 20%;
+    align-items:center;
     padding: 0;
+    height: fit-content;
 }
 .Capabilities div div p{
-    padding-right: 0;
+    padding: 2% 0;
+    width: 100%;
+    word-spacing: unset;
+    letter-spacing: unset;
+
 }
-.Capabilities div  p{
-    color: #736C5C;
-    width: 70%;
-    
-    font-size: 23px;
-    line-height: 40px;
-    letter-spacing: 2px;
-    word-spacing: 4px;
-    padding-right:10% ;
-}
+
 .process{
-    padding: 10%;
+    padding: 2% 10%;
 }
 .process p{
-    color: #BA975C;
-    font-size: 20px;
+    color: #c07b66;
+    font-size: 25px;
+    position: relative;
+}
+.process p i{
+    position: absolute;
+    right: 104%;
+    top: 10%;
 }
 .rotatingCircleHolder{
     width: 100%;
@@ -72,7 +83,7 @@
     
 }
 .rotatingCircle:hover{
-    border: 3px dashed #BA975C;
+    border: 3px dashed #F04A24;
     cursor: pointer;
     animation: invertRotation 20s infinite linear;
 }
@@ -85,6 +96,7 @@
         transform: rotate(359deg);
     }
 }
+
 @keyframes invertRotation {
     from {
         transform: rotate(359deg) scale(1.1) ;
@@ -126,13 +138,13 @@
 
 
 .gallery .pixelEscapes{
-    color: #BA975C;
+    color: #F04A24;
     font-size: 20px;
     width: 100%;
     padding: 5% 10%;
 }
 .gallery .galleryHeading{
-    color: #D8D8D8;
+    color: #000000;
     width: 100%;
     padding: 5% 10%;
     font-size: 180px;
@@ -143,7 +155,7 @@
 .gallery .galleryHeading::after{
     content: '';
     position: absolute;
-    background-color: #BA975C;
+    background-color: #F04A24;
     width: 200px;
     height: 200px;
     border-radius: 100%;
@@ -154,8 +166,19 @@
 .slider{
     width: 100%;
     height: 500px;
-    overflow: hidden;
+    overflow-y: hidden;
     position: relative;
+}
+.overTxt{
+    position: absolute;
+    left: 10%;
+    bottom: -1%;
+    z-index: 1;
+    color: #F04A24;
+    font-weight: 600;
+    text-align: center;
+    font-size: 40px;
+    width: 80%;
 }
 .imageHolder{
     padding: 3% 5%;
@@ -177,7 +200,7 @@
     padding: 0 5%;
 }
 .fa-arrow-right, .fa-arrow-left{
-    color: #BA975C;
+    color: #F04A24;
     font-size: 40px;
     margin: 0 20px;
     cursor: pointer;
@@ -188,6 +211,7 @@
     overflow: hidden;
     position: relative;
     border-radius: 5px;
+    filter: grayscale(100%);
 }
 .img p:nth-child(3){
     font-size: 20px;
@@ -196,7 +220,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #ba975cc7;
+    background-color: #2b0b04c7;
     transform: translateY(-200%);
     transition: .4s;
     display: flex;
@@ -204,15 +228,22 @@
     /* justify-content: center; */
     flex-direction: column;
 }
-.aboutImg p:nth-child(1){
+.aboutImg .serviceName{
     font-size: 2rem;
     color: rgb(255, 255, 255);
 }
-.aboutImg p:nth-child(2){
+.aboutImg .aboutService{
     font-size: 1rem;
     padding: 1rem;
     text-align: justify;
     color: rgb(226, 233, 255);
+}
+.link1{
+   font-size: 15px;
+   color: white;
+   position: absolute;
+   right: 10px;
+   /* bottom: 10px; */
 }
 .imageHolder .img img{
     width: 100%;
@@ -224,6 +255,84 @@
 .imageHolder .img:hover .aboutImg{
     transform: translateY(0%);
     z-index: 1;
+}
+@media (max-width:800px) {
+    .Capabilities{
+        padding: 4%;
+    }
+    .Capabilities div p{
+        color: #535353;
+        width: 100%;
+        font-size: 1.3rem;
+        line-height: 30px;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+    }
+    .Capabilities div div{
+        width: 100%;
+        align-items: center;
+    }
+    .Capabilities div div p{
+        width: 100%;
+        text-align: center;
+    }
+    .process{
+        padding: 4%;
+    }
+    .process p i{
+        display: none;
+    }
+    .processHolder{
+        flex-direction: column;
+    }
+    .processBox{
+        width: 100%;
+    }
+    .processBox p:nth-child(2){
+        opacity: 1;
+    }
+    .gallery .galleryHeading{
+        font-size: 40px;
+    }
+    .gallery .galleryHeading::after{
+        width: 50px;
+        height: 50px;
+        top: 0;
+        right:60%;
+    }
+    .overTxt{
+        display: none;
+    }
+    .imageHolder{
+        flex-wrap: wrap;
+    }
+    .imageHolder .img{
+        width: 48%;
+        margin:2% 0;
+    }
+    .aboutImg{
+        justify-content: center;
+    }
+    .aboutImg .aboutService{
+        display: none;
+    }
+    .aboutImg .serviceName{
+        font-size:1.4rem;
+    }
+    .link1{
+        bottom: 0;
+    }
+    .swiper{
+        padding: 5%;
+    }
+    .slider{
+        overflow: unset;
+        overflow-x: hidden;
+    }
+    .runningProcessName{
+        font-size: 30px;
+    }
+    
 }
 
 
